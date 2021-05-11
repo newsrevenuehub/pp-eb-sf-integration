@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pp-eb-sf-integration"
+version = "0.1.0"
+description = "PayPal, Eventbrite, SF integration"
+authors = ["NRH"]
+
+[tool.poetry.dependencies]
+python = "3.9.1"
+eventbrite = "^3"
+environs = "^9"
+sentry-sdk = "*"
+pytz = "*"
+celery = "^5"
+httpx = "^0"
+python-dateutil = "^2"
+typer = "*"
+email_validator = "*"
+requests = "^2.25"
+fire = "^0.4"
+
+[tool.poetry.dev-dependencies]
+ipdb = "*"
+pytest = "*"
+pytest-cov = "*"
+flake8 = "*"
+mypy = "*"
+black = { version = "*", allow-prereleases = true }
+pylint = "*"
+pylint-celery = "*"
+sentry_stack_checker = "*"
+bandit = "*"
+pytest-mock = "^3"
+
+[tool.black]
+line-length = 140
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
