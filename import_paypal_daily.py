@@ -1,0 +1,3 @@
+from import_paypal import import_last_x_days_paypal
+
+import_last_x_days_paypal()
